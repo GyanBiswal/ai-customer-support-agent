@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Alembic (keep versions, ignore local db)
+*.db
+*.sqlite3
+
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+
+# Docker
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# LangGraph / misc local state
+.langgraph_checkpoints/
