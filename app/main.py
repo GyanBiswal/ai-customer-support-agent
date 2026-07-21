@@ -1,10 +1,12 @@
 from fastapi import FastAPI
 from sqlalchemy import text
 
+from app.api.v1.routes.chat import router as chat_router
 from app.core.redis_client import redis_client
 from app.db.session import engine
 
 app = FastAPI(title="AI Customer Support Agent")
+app.include_router(chat_router, prefix="/api/v1")
 
 
 @app.get("/health")
